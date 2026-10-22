@@ -1,0 +1,13 @@
+name: Sweep
+
+on:
+  pull_request:
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start sweep
+        run: echo "Quarterly security sweep harness started"
+      - name: Finish sweep
+        run: echo "Quarterly security sweep harness finished"
